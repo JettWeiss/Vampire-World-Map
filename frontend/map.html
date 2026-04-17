@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vampire World Map</title>
+    <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@5.23.0/dist/maplibre-gl.css' />
+    <script src='https://unpkg.com/maplibre-gl@5.23.0/dist/maplibre-gl.js'></script>
+    <style>
+        body { margin: 0; padding: 0; }
+        html, body, #map { height: 100%; }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+
+<script>
+    const vampireLocations = {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "properties": {
+            "description": "Vampire",
+            "icon": "theatre"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [25.367222, 45.515]
+          }
+        }
+      ]
+    }
+
+    //Create Map
+    const map = new maplibregl.Map({
+        container: 'map',
+        style: 'https://tiles.openfreemap.org/styles/bright',
+        center: [25.367222, 45.515], <!-- Location of Bran Castle -->
+        zoom: 6
+    });
+
+    //Load Map
+    map.on('load', () => {
+        // Add a GeoJSON source containing place coordinates and information.
+        map.addSource('vampireLocations', {
+            'type': 'geojson',
+            'data': vampireLocations
+        });
+
+        map.addLayer({
+            'id': 'poi-labels',
+            'type': 'symbol',
+            'source': 'vampireLocations',
+            'layout': {
+                'text-field': ['get', 'description'],
+                'text-font': ['Noto Sans Regular'],
+                'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
+                'text-radial-offset': 0.5,
+                'text-justify': 'auto',
+                'icon-image': ['get', 'icon']
+            }
+        });
+    });
+
+    //Click Event
+    map.on('click', (e) => {
+        console.log(e.lngLat);
+        const features = map.queryRenderedFeatures(e.point, { layers: ['poi-labels'] });
+        if (features.length > 0) {
+            const props = features[0].properties;
+            console.log("Pin clicked:", props);
+        }
+    });
+</script>
+</body>
+</html>
