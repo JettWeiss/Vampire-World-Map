@@ -16,7 +16,7 @@
     const res = await fetch('pins.json');
     const vampireLocations = await res.json();
     const res2 = await fetch('vampireBios.json');
-    const vampireBios = await res.json();
+    const vampireBios = await res2.json();
 
     //Create Map
     const map = new maplibregl.Map({
