@@ -54,8 +54,9 @@
         console.log(e.lngLat);
         const features = map.queryRenderedFeatures(e.point, { layers: ['poi-labels'] });
         if (features.length > 0) {
-            const props = features[0].properties;
+            const bio = features[0].bioLink;
             console.log("Pin clicked:", props);
+            console.log("JSON:", vampireBios[bio]
         }
     });
 </script>

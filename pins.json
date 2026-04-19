@@ -2,6 +2,7 @@
   "type": "FeatureCollection",
   "features": [
     {
+      "bioLink": "Dracula",
       "properties": {
         "description": "Vampire",
         "icon": "theatre"
