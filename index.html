@@ -13,9 +13,9 @@
 <div id="map"></div>
 
 <script type="module">
-    const res = await fetch('pinLocations.json');
+    const res = await fetch('pins.json');
     const vampireLocations = await res.json();
-    const res2 = await fetch('vampireBio.json');
+    const res2 = await fetch('vampireBios.json');
     const vampireBios = await res.json();
 
     //Create Map
