@@ -12,28 +12,17 @@
 <body>
 <div id="map"></div>
 
-<script>
-    const vampireLocations = {
-      "type": "FeatureCollection",
-      "features": [
-        {
-          "properties": {
-            "description": "Vampire",
-            "icon": "theatre"
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [25.367222, 45.515]
-          }
-        }
-      ]
-    }
+<script type="module">
+    const res = await fetch('pinLocations.json');
+    const vampireLocations = await res.json();
+    const res2 = await fetch('vampireBio.json');
+    const vampireBios = await res.json();
 
     //Create Map
     const map = new maplibregl.Map({
         container: 'map',
         style: 'https://tiles.openfreemap.org/styles/bright',
-        center: [25.367222, 45.515], <!-- Location of Bran Castle -->
+        center: [25.367222, 45.515], //Location of Bran Castle
         zoom: 6
     });
 
