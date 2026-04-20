@@ -3,6 +3,7 @@
 <head>
     <title>Vampire World Map</title>
     <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@5.23.0/dist/maplibre-gl.css' />
+    <link rel="stylesheet" href="style.css">
     <script src='https://unpkg.com/maplibre-gl@5.23.0/dist/maplibre-gl.js'></script>
     <style>
         body { margin: 0; padding: 0; }
@@ -49,16 +50,69 @@
         });
     });
 
+    window.openNav = function() {
+        document.getElementById("bioSideBar").style.width = "40%";
+    }
+    window.closeNav = function() {
+        document.getElementById("bioSideBar").style.width = "0";
+    }
+
+    function populateBio(name, region, summary, year, physicalDescription, powers, origin, weaknesses, feedingMethod, culturalContext, sources){
+        document.getElementById("name").textContent = name;
+        document.getElementById("region").textContent = region;
+        document.getElementById("year").textContent = year;
+        document.getElementById("physicalDescription").textContent = physicalDescription;
+        document.getElementById("powers").textContent = powers;
+        document.getElementById("weaknesses").textContent = weaknesses;
+        document.getElementById("feedingMethod").textContent = feedingMethod;
+        document.getElementById("culturalContext").textContent = culturalContext;
+        document.getElementById("origin").textContent = origin;
+        document.getElementById("sources").textContent = sources;
+    }
+
     //Click Event
     map.on('click', (e) => {
-        console.log(e.lngLat);
         const features = map.queryRenderedFeatures(e.point, { layers: ['poi-labels'] });
         if (features.length > 0) {
-            const bio = features[0].bioLink;
-            console.log("Pin clicked:", props);
-            console.log("JSON:", vampireBios[bio]
+            openNav()
+            const bio = features[0].properties.description;
+            console.log(vampireBios[bio]);
+            let name = vampireBios[bio].name;
+            let region = vampireBios[bio].region;
+            let summary = vampireBios[bio].summary;
+            let year = vampireBios[bio].year;
+            let physicalDescription = vampireBios[bio].physicalDescription;
+            let powers = vampireBios[bio].powers;
+            let origin = vampireBios[bio].origin;
+            let weaknesses = vampireBios[bio].weaknesses;
+            let feedingMethod = vampireBios[bio].feedingMethod;
+            let culturalContext = vampireBios[bio].culturalContext;
+            let sources = vampireBios[bio].sources;
+            populateBio(name, region, summary, year, physicalDescription, powers, origin, weaknesses, feedingMethod, culturalContext, sources);
         }
     });
+
+
+
 </script>
+
+
+
+<!--Sidebar-->
+<div id="bioSideBar" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <p id="name">name</p>
+    <p id="region">region</p>
+    <p id="year">year</p>
+    <p id="physicalDescription">physicalDescription</p>
+    <p id="powers">powers</p>
+    <p id="weaknesses">weaknesses</p>
+    <p id="feedingMethod">feedingMethod</p>
+    <p id="culturalContext">culturalContext</p>
+    <p id="origin">origin</p>
+    <p id="sources">sources</p>
+</div>
+
+
 </body>
 </html>
