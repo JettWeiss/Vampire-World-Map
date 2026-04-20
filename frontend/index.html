@@ -12,6 +12,18 @@
 <body>
 <div id="map"></div>
 
+<!--Load JSONs-->
+<script>
+    fetch('your-file.json')
+      .then(res => res.json())
+      .then(data => {
+        // Use your data here
+        console.log(data);
+      })
+      .catch(err => console.error('Failed to load JSON:', err));
+</script>
+
+
 <script>
     const vampireLocations = {
       "type": "FeatureCollection",
