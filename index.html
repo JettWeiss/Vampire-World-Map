@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vampire World Map</title>
+    <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@5.23.0/dist/maplibre-gl.css' />
+    <link rel="stylesheet" href="style.css">
+    <script src='https://unpkg.com/maplibre-gl@5.23.0/dist/maplibre-gl.js'></script>
+    <style>
+        body { margin: 0; padding: 0; }
+        html, body, #map { height: 100%; }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+
+<script type="module">
+    const res = await fetch('pins.json');
+    const vampireLocations = await res.json();
+    const res2 = await fetch('vampireBios.json');
+    const vampireBios = await res2.json();
+
+    //Create Map
+    const map = new maplibregl.Map({
+        container: 'map',
+        style: 'https://tiles.openfreemap.org/styles/bright',
+        center: [25.367222, 45.515], //Location of Bran Castle
+        zoom: 6
+    });
+
+    //Load Map
+    map.on('load', () => {
+        // Add a GeoJSON source containing place coordinates and information.
+        map.addSource('vampireLocations', {
+            'type': 'geojson',
+            'data': vampireLocations
+        });
+
+        map.addLayer({
+            'id': 'poi-labels',
+            'type': 'symbol',
+            'source': 'vampireLocations',
+            'layout': {
+                'text-field': ['get', 'description'],
+                'text-font': ['Noto Sans Regular'],
+                'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
+                'text-radial-offset': 0.5,
+                'text-justify': 'auto',
+                'icon-image': ['get', 'icon']
+            }
+        });
+    });
+
+    window.openNav = function() {
+        document.getElementById("bioSideBar").style.width = "40%";
+    }
+    window.closeNav = function() {
+        document.getElementById("bioSideBar").style.width = "0";
+    }
+
+    function populateBio(name, region, summary, year, physicalDescription, powers, origin, weaknesses, feedingMethod, culturalContext, sources){
+        document.getElementById("name").textContent = name;
+        document.getElementById("region").textContent = region;
+        document.getElementById("year").textContent = year;
+        document.getElementById("physicalDescription").textContent = physicalDescription;
+        document.getElementById("powers").textContent = powers;
+        document.getElementById("weaknesses").textContent = weaknesses;
+        document.getElementById("feedingMethod").textContent = feedingMethod;
+        document.getElementById("culturalContext").textContent = culturalContext;
+        document.getElementById("origin").textContent = origin;
+        document.getElementById("sources").textContent = sources;
+    }
+
+    //Click Event
+    map.on('click', (e) => {
+        const features = map.queryRenderedFeatures(e.point, { layers: ['poi-labels'] });
+        if (features.length > 0) {
+            openNav()
+            const bio = features[0].properties.description;
+            console.log(vampireBios[bio]);
+            let name = vampireBios[bio].name;
+            let region = vampireBios[bio].region;
+            let summary = vampireBios[bio].summary;
+            let year = vampireBios[bio].year;
+            let physicalDescription = vampireBios[bio].physicalDescription;
+            let powers = vampireBios[bio].powers;
+            let origin = vampireBios[bio].origin;
+            let weaknesses = vampireBios[bio].weaknesses;
+            let feedingMethod = vampireBios[bio].feedingMethod;
+            let culturalContext = vampireBios[bio].culturalContext;
+            let sources = vampireBios[bio].sources;
+            populateBio(name, region, summary, year, physicalDescription, powers, origin, weaknesses, feedingMethod, culturalContext, sources);
+        }
+    });
+
+
+
+</script>
+
+
+
+<!--Sidebar-->
+<div id="bioSideBar" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <p id="name">name</p>
+    <p id="region">region</p>
+    <p id="year">year</p>
+    <p id="physicalDescription">physicalDescription</p>
+    <p id="powers">powers</p>
+    <p id="weaknesses">weaknesses</p>
+    <p id="feedingMethod">feedingMethod</p>
+    <p id="culturalContext">culturalContext</p>
+    <p id="origin">origin</p>
+    <p id="sources">sources</p>
+</div>
+
+
+</body>
+</html>

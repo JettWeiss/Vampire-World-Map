@@ -1,0 +1,26 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "properties": {
+        "description": "Vampire",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [25.367222, 45.515]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Strigoi",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [24.367222, 45.515]
+      }
+    }
+  ]
+}

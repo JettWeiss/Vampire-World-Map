@@ -1,0 +1,30 @@
+{
+  "Vampire": {
+    "name": "Vampire",
+    "region": "Eastern Europe (Balkans, Transylvania, Serbia)",
+    "summary": "The archetypal undead creature of European folklore, immortalized as an aristocratic predator who preys on the living under cover of darkness",
+    "year": "Folklore predates 1000 AD, popularized 1700s",
+    "physicalDescription": "Pale skin, fanged teeth, red eyes, aristocratic appearance, casts no reflection",
+    "powers": "Shapeshifting (bat, wolf, mist), Hypnosis, Superhuman strength, Immortality",
+    "origin": "Bitten by another vampire, Dying in sin, Improper burial, Suicide",
+    "weaknesses": "Sunlight, Garlic, Holy water, Crosses, Silver, Wooden stake through heart, Running water",
+    "feedingMethod": "Biting the neck, draining blood of living victims at night",
+    "culturalContext": "Rooted in Eastern European fear of the undead and disease outbreaks; popularized in Western culture by Bram Stoker's Dracula (1897)",
+    "images": [],
+    "sources": "Bram Stoker's Dracula, Vampyre by John Polidori (1819)"
+  },
+  "Strigoi": {
+    "name": "Strigoi",
+    "region": "Romania",
+    "summary": "A malevolent undead spirit from Romanian folklore, one of the primary inspirations for the modern vampire myth, feared for draining the life force of family members and livestock",
+    "year": "Ancient Romanian folklore, documented formally in the 1700s",
+    "physicalDescription": "Ruddy complexion, two hearts, red hair, blue eyes, may appear as they did in life",
+    "powers": "Shapeshifting (cat, dog, flea), invisibility, draining life force, causing disease in livestock",
+    "origin": "Dying unbaptized, born with a caul, living a sinful life, being cursed by a witch",
+    "weaknesses": "Garlic, iron, hawthorn, burning the corpse, placing millet in the grave to distract counting",
+    "feedingMethod": "Draining life force and blood from family members and livestock while they sleep",
+    "culturalContext": "Deeply embedded in Romanian peasant culture, the Strigoi was feared as a returning family member. Corpses were often exhumed and staked to prevent their return",
+    "images": [],
+    "sources": "Romanian Vampires by Agnes Murgoci (1926), The Vampire in Romanian Belief and Folklore by Tudor Pamfile"
+  }
+}
