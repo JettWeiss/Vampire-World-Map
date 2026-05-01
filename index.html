@@ -19,18 +19,24 @@
 <!--Sidebar-->
 <div id="bioSideBar" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <img id="images" src="images/defaultVampire.png" alt="Default Vampire">
     <p id="name">name</p>
-    <p id="region">region</p>
-    <p id="notes">notes</p>
-    <p id="year">year</p>
-    <p id="physicalDescription">physicalDescription</p>
+    <div class="meta">
+        <div id="region"></div>
+        <div id="year"></div>
+    </div>
+    <div class="imageDescription">
+        <img id="images" src="images/defaultVampire.png" alt="Default Vampire">
+        <p id="physicalDescription">physicalDescription</p>
+    </div>
+
+
     <p id="powers">powers</p>
     <p id="weaknesses">weaknesses</p>
     <p id="feedingMethod">feedingMethod</p>
     <p id="culturalContext">culturalContext</p>
     <p id="origin">origin</p>
     <p id="sources">sources</p>
+    <p id="notes">notes</p>
     <p id="seeAlso">seeAlso</p>
 </div>
 

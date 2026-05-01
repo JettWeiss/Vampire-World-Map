@@ -6,7 +6,7 @@ const vampireBios = await res2.json();
 const map = new maplibregl.Map({
     container: 'map',
     style: 'https://tiles.openfreemap.org/styles/bright',
-    center: [25.367222, 45.515],
+    center: [-90.929, 15.305], //25.367222, 45.515
     zoom: 6,
     fadeDuration: 0
 });
@@ -79,6 +79,7 @@ window.closeNav = function() {
 
 function populateBio(name, region, notes, summary, year, physicalDescription, powers, origin, weaknesses, feedingMethod, culturalContext, images, sources, seeAlso) {
     document.getElementById("name").textContent = name;
+
     document.getElementById("region").textContent = region;
     document.getElementById("notes").textContent = notes;
     document.getElementById("year").textContent = year;
