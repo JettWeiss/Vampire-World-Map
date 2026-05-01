@@ -2,11 +2,13 @@ const res = await fetch('pins.json');
 const vampireLocations = await res.json();
 const res2 = await fetch('vampireBios.json');
 const vampireBios = await res2.json();
+let currentBio = null;
+let currentImageNum = 1;
 
 const map = new maplibregl.Map({
     container: 'map',
     style: 'https://tiles.openfreemap.org/styles/bright',
-    center: [-90.929, 15.305], //25.367222, 45.515
+    center: [25.367222, 45.515], //
     zoom: 6,
     fadeDuration: 0
 });
@@ -19,9 +21,6 @@ map.on('load', async () => {
         'clusterMaxZoom': 14,
         'clusterRadius': 50
     });
-
-//    let stake = await map.loadImage('images/StakePin.png');
-//    map.addImage('stake', stake.data);
 
     // Cluster points
     map.addLayer({
@@ -77,23 +76,25 @@ window.closeNav = function() {
     document.getElementById("bioSideBar").style.width = "0";
 }
 
-function populateBio(name, region, notes, summary, year, physicalDescription, powers, origin, weaknesses, feedingMethod, culturalContext, images, sources, seeAlso) {
-    document.getElementById("name").textContent = name;
-
+function populateBio(name, altName, region, notes, summary, year, physicalDescription, powers, origin, weaknesses, feedingMethod, culturalContext, images, sources, seeAlso) {
+    document.getElementById("name").textContent = name + altName;
     document.getElementById("region").textContent = region;
-    document.getElementById("notes").textContent = notes;
     document.getElementById("year").textContent = year;
+
+    document.getElementById("images").src = "images/" + name.replaceAll(" ", "") + "1.png";
     document.getElementById("physicalDescription").textContent = physicalDescription;
-    document.getElementById("powers").textContent = powers;
-    document.getElementById("weaknesses").textContent = weaknesses;
+
     document.getElementById("feedingMethod").textContent = feedingMethod;
+
+    document.getElementById("powers").innerHTML = powers.map(p => `<li>${p}</li>`).join("");
+    document.getElementById("weaknesses").innerHTML = weaknesses.map(w => `<li>${w}</li>`).join("");
+
     document.getElementById("culturalContext").textContent = culturalContext;
     document.getElementById("origin").textContent = origin;
+
+    document.getElementById("notes").textContent = notes;
     document.getElementById("sources").textContent = sources;
     document.getElementById("seeAlso").textContent = seeAlso;
-    document.getElementById("images").src = "images/" + name.replaceAll(" ", "") + ".png";
-    const path = "images/" + name.replaceAll(" ", "") + ".png";
-    console.log(path);
 }
 
 // Click Event
@@ -101,22 +102,43 @@ map.on('click', (e) => {
     const features = map.queryRenderedFeatures(e.point, { layers: ['poi-labels'] });
     if (features.length > 0) {
         openNav();
-        const bio = features[0].properties.description;
-        console.log(vampireBios[bio]);
-        let name = vampireBios[bio].name;
-        let region = vampireBios[bio].region;
-        let notes = vampireBios[bio].notes;
-        let summary = vampireBios[bio].summary;
-        let year = vampireBios[bio].year;
-        let physicalDescription = vampireBios[bio].physicalDescription;
-        let powers = vampireBios[bio].powers;
-        let origin = vampireBios[bio].origin;
-        let weaknesses = vampireBios[bio].weaknesses;
-        let feedingMethod = vampireBios[bio].feedingMethod;
-        let culturalContext = vampireBios[bio].culturalContext;
-        let images = vampireBios[bio].images;
-        let sources = vampireBios[bio].sources;
-        let seeAlso = vampireBios[bio].seeAlso;
-        populateBio(name, region, notes, summary, year, physicalDescription, powers, origin, weaknesses, feedingMethod, culturalContext, images, sources, seeAlso);
+        currentBio = features[0].properties.description;
+        currentImageNum = 1;
+        let name = vampireBios[currentBio].name;
+        let altName = vampireBios[currentBio].altName;
+        let region = vampireBios[currentBio].region;
+        let notes = vampireBios[currentBio].notes;
+        let summary = vampireBios[currentBio].summary;
+        let year = vampireBios[currentBio].year;
+        let physicalDescription = vampireBios[currentBio].physicalDescription;
+        let powers = vampireBios[currentBio].powers;
+        let origin = vampireBios[currentBio].origin;
+        let weaknesses = vampireBios[currentBio].weaknesses;
+        let feedingMethod = vampireBios[currentBio].feedingMethod;
+        let culturalContext = vampireBios[currentBio].culturalContext;
+        let images = vampireBios[currentBio].images;
+        let sources = vampireBios[currentBio].sources;
+        let seeAlso = vampireBios[currentBio].seeAlso;
+        populateBio(name, altName, region, notes, summary, year, physicalDescription, powers, origin, weaknesses, feedingMethod, culturalContext, images, sources, seeAlso);
     }
 });
+
+window.prevImage = function (){
+    if (currentImageNum == 1){
+        console.log("Already on first image");
+    } else{
+        const creatureName = vampireBios[currentBio].name.replaceAll(" ", "");
+        document.getElementById("images").src = "images/" + creatureName + (currentImageNum - 1) + ".png";
+        currentImageNum = currentImageNum - 1;
+    }
+}
+window.nextImage = function (){
+    const numImages = vampireBios[currentBio].images;
+    if (currentImageNum == numImages){
+        console.log("Already on final image");
+    } else{
+        const creatureName = vampireBios[currentBio].name.replaceAll(" ", "");
+        document.getElementById("images").src = "images/" + creatureName + (currentImageNum + 1) + ".png";
+        currentImageNum = currentImageNum + 1;
+    }
+}

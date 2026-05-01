@@ -1,19 +1,21 @@
 {
   "Vampire": {
     "name": "Vampire",
-    "region": "Eastern Europe (Balkans, Transylvania, Serbia)",
-    "year": "Folklore predates 1000 AD, popularized 1700s",
-    "physicalDescription": "Pale skin, fanged teeth, red eyes, aristocratic appearance, casts no reflection",
-    "powers": "Shapeshifting (bat, wolf, mist), Hypnosis, Superhuman strength, Immortality",
-    "origin": "Bitten by another vampire, Dying in sin, Improper burial, Suicide",
-    "weaknesses": "Sunlight, Garlic, Holy water, Crosses, Silver, Wooden stake through heart, Running water",
-    "feedingMethod": "Biting the neck, draining blood of living victims at night",
-    "culturalContext": "Rooted in Eastern European fear of the undead and disease outbreaks; popularized in Western culture by Bram Stoker's Dracula (1897)",
-    "images": 0,
+    "altName": "",
+    "region": "Eastern Europe",
+    "year": "Popularized 1700s",
+    "physicalDescription": "Vampires are usually described as having pale skin with a uncanny death-like appearance. Their clothing is often formal and aristocratic. They have two fangs and are typically charismastic towards victims.",
+    "powers": ["Shapeshifting", "Hypnosis", "Superhuman Strength", "Immortality"],
+    "origin": "They are created through various means, but most often biting another. Other causes are suicide or deals with the devil.",
+    "weaknesses": ["Sunlight", "Garlic", "Holy Water", "Crosses", "Silver", "Wooden Stake", "Running Water"],
+    "feedingMethod": "It bites the neck of its victims, typically after a period of hospitality towards them. It also is known to kidnap children from nearby towns.",
+    "culturalContext": "",
+    "images": 3,
     "sources": "Bram Stoker's Dracula, Vampyre by John Polidori (1819)"
   },
   "Abchanchu": {
     "name": "Abchanchu",
+    "altName": "",
     "region": "Bolivia, Andean region",
     "year": "Late 15th century",
     "physicalDescription": "Appears as a elderly man, occasionaly fat if it recently ate. It has tattered clothes and comes off as fake friendly with a smile",
@@ -26,13 +28,15 @@
     "sources": ["López, Juan Antonio Sanz (2020-08-25). Vampiros, Príncipes del Abismo: Un Tratado Inusual Sobre Vampirismo: La Crónica Definitiva de la Búsqueda y Explicación de Este Fenómeno (in Spanish). Arcopress. ISBN 978-84-17828-86-8."]
   },
   "Antawalla": {
-    "name": "Antawalla (Lari Lari)",
+    "name": "Antawalla",
+    "altName": " (Lari Lari)",
+    "altName": "",
     "region": "Lake Titicaca, Bolivia",
     "year": "Late 15th century",
     "physicalDescription": "It has the face of cat, but the body of an eagle. Can be seen on fire and it's appearance is accompanied by a bright flash of light",
     "powers": ["Possession", "Shapeshifting", "Hypnosis"],
     "origin": "",
-    "weaknesses": "",
+    "weaknesses": [""],
     "feedingMethod": "Its voice and song has the power to put its victims to sleep, where it then steals their blood and soul. It is also known to steal newborns to drink their blood.",
     "culturalContext": "",
     "images": 2,
@@ -40,6 +44,7 @@
   },
   "Abere": {
     "name": "Abere",
+    "altName": "",
     "region": "Melanesia",
     "year": "",
     "physicalDescription": "Siren-like creature with a lower half of a fish and upper half of a woman",
@@ -52,6 +57,7 @@
   },
   "Adze": {
     "name": "Adze",
+    "altName": "",
     "region": "Southeast Ghana",
     "year": "13th Century",
     "physicalDescription": "In human form they are hunchbacked with talons and jet-black skin. They can also shapeshift into insects, most commonly fireflies and mosquitos",
@@ -60,11 +66,12 @@
     "weaknesses": ["Prayer"],
     "feedingMethod": "They transform into insects and sneak into a household. They would suck the blood from their sleeping victims, making them sick. The effects are similar to that of malaria. ",
     "culturalContext": "These vampires come from a fear of  insect-borne diseases like maleria",
-    "images": "",
+    "images": 2,
     "sources": [""]
   },
   "Algul": {
     "name": "Algul",
+    "altName": "",
     "region": "Arabian Desert",
     "year": "",
     "physicalDescription": "Is a jinn, an evil spirit who appears as a woman.",
@@ -77,6 +84,7 @@
   },
   "Alp": {
     "name": "Alp",
+    "altName": "",
     "region": "Germany",
     "year": "11th Century",
     "physicalDescription": "Small humanoid creature who wears a white hat",
@@ -89,6 +97,7 @@
   },
   "Angiak": {
     "name": "Angiak",
+    "altName": "",
     "region": "Northern Alaska, Inuit people",
     "year": "",
     "physicalDescription": "It looks the child that was abandoned",
@@ -101,6 +110,7 @@
   },
   "Aniukha": {
     "name": "Aniukha",
+    "altName": "",
     "region": "Siberia",
     "year": "1940",
     "physicalDescription": "While it's size varies from insect to rabbit sized, it's a small creature that moves on all four limbs. It has plated skin with patches of thich brown fur. It has huge black eyes, pointed ears, and a snout.",
@@ -113,6 +123,7 @@
   },
   "Asanbosam": {
     "name": "Asanbosam",
+    "altName": "",
     "region": "Southern Côte d'Ivoire",
     "year": "18th Century",
     "physicalDescription": "It has iron teeth and long hair with long hooked claws for feet. They often are portayed with batlike features, like 20 feet wide wings.",
@@ -125,6 +136,7 @@
   },
   "Asema": {
     "name": "Asema",
+    "altName": "",
     "region": "Suriname",
     "notes": "Similar to Caribbean soucouyant",
     "year": "",
@@ -139,6 +151,7 @@
   },
   "Asiman": {
     "name": "Asiman",
+    "altName": "",
     "region": "Southern Togo, Dahomey people",
     "notes": "Similar to Ashanti Obayifo",
     "year": "",
@@ -147,12 +160,13 @@
     "origin": "It transformed itself using magic",
     "weaknesses": ["Killing it in it's animal form"],
     "feedingMethod": "It flies through the air to hunt",
-    "images": 0,
+    "images": 1,
     "sources": [""],
     "seeAlso": "Obayifo"
   },
   "Baobhan Sith": {
     "name": "Baobhan Sith",
+    "altName": "",
     "region": "Scotland",
     "year": "",
     "physicalDescription": "The baobhan sith is a vampiric fay. They look like beautiful women with deer hooves. They'll often wear long green dresses to hide their legs.",
@@ -165,6 +179,7 @@
   },
   "Bezkost": {
     "name": "Bezkost",
+    "altName": "",
     "region": "Balkan region",
     "year": "",
     "physicalDescription": "Often referred to as a 'boneless vampire' it resembles a meaty sack. It fills up with blood while it's feeding.",
@@ -177,6 +192,7 @@
   },
   "Blut Aussauger": {
     "name": "Blut Aussauger",
+    "altName": "",
     "region": "Bosnia-Herzegovina",
     "year": "",
     "physicalDescription": "It has pale waxy skin and large eyes. It has no skeletal system and is hairy.",
@@ -189,6 +205,7 @@
   },
   "Boo Hag": {
     "name": "Boo Hag",
+    "altName": "",
     "region": "Southern America, Gullah Geechee people",
     "year": "",
     "physicalDescription": "During the day it looks like an old woman with red eyes, but at night it sheds it's skin. When it's hunting it looks like a bloody mess of a humanoid with blue and red veins showing from it's body.",
@@ -201,6 +218,7 @@
   },
   "Boraro": {
     "name": "Boraro",
+    "altName": "",
     "region": "Columbia, Tukano people",
     "year": "",
     "physicalDescription": "The boraro has pale skin with black fur and is close to tree height in size. It has backwards facing feet, fangs, and massive genitalia.",
@@ -213,6 +231,7 @@
   },
   "Brahmaparush": {
     "name": "Brahmaparush",
+    "altName": "",
     "region": "Eastern India",
     "year": "",
     "physicalDescription": "While looking typically vampiric, they stand out for their gruesome trophies they take from victims. They wear the intenstines of those they kill around themselves like necklaces and crowns. They're also known to carry a human skull and use it as a drinking cup.",
@@ -225,6 +244,7 @@
   },
   "Burach-Bhaoi": {
     "name": "Burach-Bhaoi",
+    "altName": "",
     "region": "Scotland",
     "year": "",
     "physicalDescription": "It's a massive muscular eel fae between 3 and 6 feet in length. It blends into the muddle floors of its loch with its smooth, slimy, brown skin. It has nine eyes along it's head and spine.",
@@ -237,6 +257,7 @@
   },
   "Camazotz": {
     "name": "Camazotz",
+    "altName": "",
     "region": "Guatemala, K'iche' people",
     "year": "100 BC",
     "physicalDescription": "It's a vampiric vampire god. It's depicted as a man-bat creature with a knife in one hand and a human sacrifice in the other.",
@@ -249,6 +270,7 @@
   },
   "Catacano": {
     "name": "Catacano",
+    "altName": "",
     "region": "Crete",
     "year": "",
     "physicalDescription": "This vampire smiles all the time",
@@ -261,6 +283,7 @@
   },
   "Cãoera": {
     "name": "Cãoera",
+    "altName": "",
     "region": "Brazil, Mura people",
     "year": "",
     "physicalDescription": "Giant bat the size of a vulture",
@@ -273,6 +296,7 @@
   },
   "Capelobo": {
     "name": "Capelobo",
+    "altName": "",
     "region": "Brazil, Para",
     "year": "",
     "physicalDescription": "It looks like an anteater, but larger and bipedal. It has claws and perfectly round hooves",
@@ -285,6 +309,7 @@
   },
   "Chedipe": {
     "name": "Chedipe",
+    "altName": "",
     "region": "India, near the Godavari river",
     "year": "",
     "physicalDescription": "The chedipe is a vulgar woman riding a tiger at night",
@@ -297,6 +322,7 @@
   },
   "Children of Judas": {
     "name": "Children of Judas",
+    "altName": "",
     "region": "Bulgaria/Serbia",
     "year": "",
     "physicalDescription": "Believed to be direct descendants of Judas Iscariot, all vampires of this type have red hair.",
@@ -309,6 +335,7 @@
   },
   "Chonchon": {
     "name": "Chonchon",
+    "altName": "",
     "region": "Southern Chile, Macpuche religion",
     "year": "",
     "physicalDescription": "Flying head with wings in it ears. It's cry sounds like \"tui-tui-tui\". Invisible to most",
@@ -321,6 +348,7 @@
   },
   "Chupacabra": {
     "name": "Chupacabra",
+    "altName": "",
     "region": "Originated in Puerto Rico, spread to Mexico and U.S.",
     "year": "March, 1995",
     "physicalDescription": "Descriptions of the chupacabra vary greatly. In Puerto Rico and Hispanic America it's most commonly described as a small reptilian alien looking creature with a row of spines going from neck to tail. However in Southwestern United States its more like a hairless dog with pronouced eye sockets, fangs, and claws. ",
@@ -333,6 +361,7 @@
   },
   "Churel": {
     "name": "Churel",
+    "altName": "",
     "region": "Southeast Asia, particularly India",
     "year": "",
     "physicalDescription": "They are described as extremely ugly with backwards feet, a black tongue, rough skin, and wild hair. they can occasionally shapeshift into a beautiful women",
@@ -345,6 +374,7 @@
   },
   "Danag": {
     "name": "Danag",
+    "altName": "",
     "region": "Phillipines, Isnag people",
     "year": "",
     "physicalDescription": "A once peaceful vampire that actually coexisted with mankind. They are credited with the first to cultivate the taro plant.",
@@ -357,6 +387,7 @@
   },
   "Dearg-Due": {
     "name": "Dearg-Due",
+    "altName": "",
     "region": "Ireland, specific example in waterford",
     "year": "",
     "physicalDescription": "They are a beautitul yet pale looking woman who stroll aimlessly in graveyard.",
@@ -369,6 +400,7 @@
   },
   "Edimmu": {
     "name": "Edimmu",
+    "altName": "",
     "region": "Mesopatamia, Sumer/Iraq",
     "year": "4000 B.C.",
     "physicalDescription": "Ghostlike in appearance, almost completely incorpearal almost like the wind.",
@@ -381,6 +413,7 @@
   },
   "Empusa": {
     "name": "Empusa",
+    "altName": "",
     "region": "Greece",
     "year": "",
     "physicalDescription": "One-legged, with a singular donkey's leg and a prosthetic bronze one.",
@@ -393,6 +426,7 @@
   },
   "Ekek": {
     "name": "Ekek",
+    "altName": "",
     "region": "Phillipines",
     "year": "",
     "physicalDescription": "Birdlike humanoid creatures. Makes an 'ek-ek-ek' sound while hunting.",
@@ -405,6 +439,7 @@
   },
   "Estries": {
     "name": "Estries",
+    "altName": "",
     "region": "Jewish communities in Europe",
     "year": "Medieval Era",
     "physicalDescription": "It's a noncorporeal mass of evil that can take the form of a human woman",
@@ -417,6 +452,7 @@
   },
   "Encourado": {
     "name": "Encourado",
+    "altName": "",
     "region": "Northeast Brazil",
     "year": "",
     "physicalDescription": "He wears black leathes clothes and always smells like blood. roosters stop crowing as he nears, dogs howl.",
@@ -429,6 +465,7 @@
   },
   "Gaki": {
     "name": "Gaki",
+    "altName": "",
     "region": "Japan",
     "year": "",
     "physicalDescription": "Cold hollow features and pale skin. Enourmous stomach and narrow neck",
@@ -441,6 +478,7 @@
   },
   "Glaistig": {
     "name": "Glaistig",
+    "altName": "",
     "region": "Scotland",
     "year": "",
     "physicalDescription": "It's a vampiric fay that wears a green dress to hide its goat legs.",
@@ -453,6 +491,7 @@
   },
   "Gwrach y Rhibyn": {
     "name": "Gwrach y Rhibyn",
+    "altName": "",
     "region": "Wales",
     "year": "",
     "physicalDescription": "Vampiric fay that has two different forms. The first is a hunchback figure that has nothing but darkness under its green cloak. The other is a creature so hideous under the cloak it drives madness to anyone who looks at it. It has a constant stream of drool from its mouth, a hooked nose, clawed limbs, and large bat wings at its side.",
@@ -465,6 +504,7 @@
   },
   "Habergeiss": {
     "name": "Habergeiss",
+    "altName": "",
     "region": "Serbia",
     "year": "",
     "physicalDescription": "It's a three-legged demon bird. Occasionaly it is described as a hybrid of goats and birds.",
@@ -477,6 +517,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -489,6 +530,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -501,6 +543,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -513,6 +556,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -525,6 +569,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -537,6 +582,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -549,6 +595,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -561,6 +608,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -573,6 +621,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -585,6 +634,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -597,6 +647,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -609,6 +660,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -621,6 +673,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -633,6 +686,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -645,6 +699,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -657,6 +712,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -669,6 +725,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -681,6 +738,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -693,6 +751,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -705,6 +764,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -717,6 +777,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -729,6 +790,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -741,6 +803,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -753,6 +816,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -765,6 +829,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -777,6 +842,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -789,6 +855,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -801,6 +868,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -813,6 +881,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -825,6 +894,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -837,6 +907,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -849,6 +920,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -861,6 +933,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -873,6 +946,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -885,6 +959,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -897,6 +972,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -909,6 +985,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -921,6 +998,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -933,6 +1011,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -945,6 +1024,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -957,6 +1037,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -969,6 +1050,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -981,6 +1063,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -993,6 +1076,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -1005,6 +1089,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -1017,6 +1102,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -1029,6 +1115,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -1041,6 +1128,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -1053,6 +1141,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -1065,6 +1154,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -1077,6 +1167,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",
@@ -1089,6 +1180,7 @@
   },
   "Template": {
     "name": "",
+    "altName": "",
     "region": "",
     "year": "",
     "physicalDescription": "",

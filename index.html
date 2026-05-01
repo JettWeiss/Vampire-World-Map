@@ -25,19 +25,56 @@
         <div id="year"></div>
     </div>
     <div class="imageDescription">
-        <img id="images" src="images/defaultVampire.png" alt="Default Vampire">
+        <div class="imageControls">
+            <img id="images" src="images/Vampire1.png" alt="Default Vampire">
+            <div class="arrows">
+                <a href="javascript:void(0)" class="prevImage" onclick="prevImage()">&larr;</a>
+                <a href="javascript:void(0)" class="nextImage" onclick="nextImage()">&rarr;</a>
+            </div>
+        </div>
         <p id="physicalDescription">physicalDescription</p>
     </div>
 
+    <div id="Feeding">
+        <p id="feedingTitle"> Feeding Method</p>
+        <p id="feedingMethod">feedingMethod</p>
+    </div>
 
-    <p id="powers">powers</p>
-    <p id="weaknesses">weaknesses</p>
-    <p id="feedingMethod">feedingMethod</p>
-    <p id="culturalContext">culturalContext</p>
-    <p id="origin">origin</p>
+    <div id="powersAndWeaknesses">
+        <div id="powersSection">
+            <p id="powersTitle"> Powers</p>
+            <ul id="powers"></ul>
+        </div>
+        <div id="weaknessesSection">
+            <p id="weaknessesTitle"> Weaknesses</p>
+            <ul id="weaknesses"></ul>
+        </div>
+    </div>
+
+    <div id="culturalInfo">
+        <div id="culturalContextSection" class="half">
+            <p id="culturalContextTitle">Cultural Context</p>
+            <p id="culturalContext">Cultural Context</p>
+        </div>
+
+        <div id="originSection" class="half">
+            <p id="originTitle">Origin</p>
+            <p id="origin">Origin</p>
+        </div>
+    </div>
+
+    <div id="notesSection">
+        <p class="title">Notes</p>
+        <p id="notes"></p>
+    </div>
+
+    <div id="seeAlsoSection">
+        <p class="title">See Also</p>
+        <p id="seeAlso"></p>
+    </div>
+
     <p id="sources">sources</p>
-    <p id="notes">notes</p>
-    <p id="seeAlso">seeAlso</p>
+
 </div>
 
 
