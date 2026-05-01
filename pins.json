@@ -1,0 +1,698 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "properties": {
+        "description": "Vampire",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [25.367222, 45.515]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Abchanchu",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-68.133333, -16.495833]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Antawalla",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-69.325, -15.825]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Abere",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [150.99892037748816, -5.626221398539519]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Adze",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [0.8219778440826717, 6.249304717113547]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Algul",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.88261, 20.30469]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Alp",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.50, 48.50]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Angiak",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-147.523, 69.665]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Anuikha",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [90, 61.5]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Asanbosam",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.7109, 5.8422]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Asema",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-56.2352, 4.14397]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Asiman",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.10527, 6.69292]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Baobhan Sith",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.203, 57.163]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Bezkoz",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [21.531, 42.294]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Blut Aussauger",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.747,44.324]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Boo Hag",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.428, 33.311]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Boraro",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-70.002, 0.9565]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Brahmaparush",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [88.3, 23.5]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Burach-Bhaoi",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.936, 56.71]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Camazotz",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.929, 15.305]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Catacano",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [24.862, 35.218]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Cãoera",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-62.753, -6.925]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Capelobo",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.592, -4.087]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Chedipe",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.877, 18.818]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Children of Judas",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [23.119, 43.547]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Chonchon",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-72.439, -44.039]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Chupacabra",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-66.59, 18.22]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Churel",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [82.652, 26.327]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Danag",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.146, 18.1908]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Dearg-Due",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-7.151, 52.244]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Edimmu",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [45.296, 32.381]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Empusa",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [24.296, 41.017]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Ekek",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.406, 16.213]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Estries",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.7, 49.4]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Encourado",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-42.653, -4.402]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Gaki",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [133.723, 35.0323]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Glaistig",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-5.601, 56.881]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Gwrach y Rhibyn",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.648, 52.432]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "Habergeiss",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [21.726, 44.042]
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+
+    {
+      "properties": {
+        "description": "",
+        "icon": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      }
+    }
+
+  ]
+}

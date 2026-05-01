@@ -28,24 +28,52 @@
     });
 
     //Load Map
-    map.on('load', () => {
-        // Add a GeoJSON source containing place coordinates and information.
+    map.on('load', async () => {
         map.addSource('vampireLocations', {
             'type': 'geojson',
-            'data': vampireLocations
+            'data': vampireLocations,
+            'cluster': true,
+            'clusterMaxZoom': 14
         });
 
+        let stake = await map.loadImage('images/StakePin.png')
+        map.addImage('stake', stake.data);
+
+        //Single point
         map.addLayer({
             'id': 'poi-labels',
             'type': 'symbol',
             'source': 'vampireLocations',
+            'filter': ['!', ['has', 'point_count']],
             'layout': {
                 'text-field': ['get', 'description'],
                 'text-font': ['Noto Sans Regular'],
                 'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
                 'text-radial-offset': 0.5,
                 'text-justify': 'auto',
-                'icon-image': ['get', 'icon']
+                'icon-image': 'stake',
+                'icon-size': 0.5,
+                'icon-anchor': 'bottom',
+                'icon-offset': [-75, 45]
+            }
+        });
+
+        //Cluster points
+        map.addLayer({
+            'id': 'clustered-labels',
+            'type': 'symbol',
+            'source': 'vampireLocations',
+            'filter': ['has', 'point_count'],
+            'layout': {
+                'text-field': ['concat', ['to-string', ['get', 'point_count']], ' vampires'],
+                'text-font': ['Noto Sans Regular'],
+                'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
+                'text-radial-offset': 0.5,
+                'text-justify': 'auto',
+                'icon-image': 'stake',
+                'icon-size': .5,
+                'icon-anchor': 'bottom',
+                'icon-offset': [-75, 45]
             }
         });
     });
@@ -57,9 +85,10 @@
         document.getElementById("bioSideBar").style.width = "0";
     }
 
-    function populateBio(name, region, summary, year, physicalDescription, powers, origin, weaknesses, feedingMethod, culturalContext, sources){
+    function populateBio(name, region, notes, summary, year, physicalDescription, powers, origin, weaknesses, feedingMethod, culturalContext, sources, seeAlso){
         document.getElementById("name").textContent = name;
         document.getElementById("region").textContent = region;
+        document.getElementById("notes").textContent = notes;
         document.getElementById("year").textContent = year;
         document.getElementById("physicalDescription").textContent = physicalDescription;
         document.getElementById("powers").textContent = powers;
@@ -68,6 +97,7 @@
         document.getElementById("culturalContext").textContent = culturalContext;
         document.getElementById("origin").textContent = origin;
         document.getElementById("sources").textContent = sources;
+        document.getElementById("seeAlso").textContent = seeAlso;
     }
 
     //Click Event
@@ -79,6 +109,7 @@
             console.log(vampireBios[bio]);
             let name = vampireBios[bio].name;
             let region = vampireBios[bio].region;
+            let notes = vampireBios[bio].notes;
             let summary = vampireBios[bio].summary;
             let year = vampireBios[bio].year;
             let physicalDescription = vampireBios[bio].physicalDescription;
@@ -88,7 +119,8 @@
             let feedingMethod = vampireBios[bio].feedingMethod;
             let culturalContext = vampireBios[bio].culturalContext;
             let sources = vampireBios[bio].sources;
-            populateBio(name, region, summary, year, physicalDescription, powers, origin, weaknesses, feedingMethod, culturalContext, sources);
+            let seeAlso = vampireBios[bio].seeAlso;
+            populateBio(name, region, notes, summary, year, physicalDescription, powers, origin, weaknesses, feedingMethod, culturalContext, sources, seeAlso);
         }
     });
 
@@ -103,6 +135,7 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <p id="name">name</p>
     <p id="region">region</p>
+    <p id="notes">notes</p>
     <p id="year">year</p>
     <p id="physicalDescription">physicalDescription</p>
     <p id="powers">powers</p>
@@ -111,6 +144,7 @@
     <p id="culturalContext">culturalContext</p>
     <p id="origin">origin</p>
     <p id="sources">sources</p>
+    <p id="seeAlso">seeAlso</p>
 </div>
 
 
