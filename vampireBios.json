@@ -9,7 +9,7 @@
     "weaknesses": "Sunlight, Garlic, Holy water, Crosses, Silver, Wooden stake through heart, Running water",
     "feedingMethod": "Biting the neck, draining blood of living victims at night",
     "culturalContext": "Rooted in Eastern European fear of the undead and disease outbreaks; popularized in Western culture by Bram Stoker's Dracula (1897)",
-    "images": [],
+    "images": 0,
     "sources": "Bram Stoker's Dracula, Vampyre by John Polidori (1819)"
   },
   "Abchanchu": {
@@ -163,8 +163,8 @@
     "images": 1,
     "sources": [""]
   },
-  "Bezkoz": {
-    "name": "Bezkoz",
+  "Bezkost": {
+    "name": "Bezkost",
     "region": "Balkan region",
     "year": "",
     "physicalDescription": "Often referred to as a 'boneless vampire' it resembles a meaty sack. It fills up with blood while it's feeding.",
